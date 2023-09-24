@@ -8,27 +8,30 @@ contract Certificate {
         string date_of_issue;
         bytes32 unique_id;
     }
-    
     mapping(bytes32 => certificate_info) public certificates;
+    mapping (string => bytes32) public recovery_data;
 
+    bytes32[] public id_storage;
 
-    function build_certificate (string memory _name, string memory _date)public {
+    function build_certificate (string memory _name, string memory _date)public returns(bytes32) {
         
         
         bytes32 unique = keccak256(abi.encodePacked(_name, _date, msg.sender));
-        
         certificate_info memory new_certificate;
         new_certificate = certificate_info({name: _name, date_of_issue: _date, unique_id: unique});
         
         certificates[unique] = new_certificate;
+        recovery_data[_name] = unique;
+        return unique;
       
     }
-    function access_certificate(bytes32 id) public returns(string memory, string memory, bytes32){
-        certificate_info memory val = certificates[id];
-        return (val.name, val.date_of_issue, val.unique_id);
+    function access_certificate(bytes32 id) public view returns(certificate_info memory){
+        return certificates[id];
     }
-    
 
-
-
+    function recover_certificate (string memory your_name) public view returns(bytes32, string memory){
+        // if the certificate is lost
+        string memory message = "use the id in the 'access_certificates' function to get back the lost credentials.";
+        return (recovery_data[your_name], message);
+    }
 }
