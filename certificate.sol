@@ -8,13 +8,12 @@ contract Certificate {
         string date_of_issue;
         bytes32 unique_id;
     }
-    mapping(bytes32 => certificate_info) public certificates;
+    mapping(bytes32 => certificate_info) certificates;
     mapping (string => bytes32) public recovery_data;
 
-    // takes in the required credentials to build the certificate. 
-    function build_certificate (string memory _name, string memory _date)public returns(bytes32) { 
-        
-        
+    // takes in user's name and current date to build the certificate. returns a unique id
+    // which is used to access the certificate data in the 'access_certificates' function below
+    function build_certificate (string memory _name, string memory _date)external returns(bytes32) {
         bytes32 unique = keccak256(abi.encodePacked(_name, _date, msg.sender));
         certificate_info memory new_certificate;
         new_certificate = certificate_info({name: _name, date_of_issue: _date, unique_id: unique});
@@ -24,14 +23,15 @@ contract Certificate {
         return unique;
       
     }
-    // uses the unique id to access the certificate details
-    function access_certificate(bytes32 id) public view returns(certificate_info memory){
+    // takes in the unique id and returns the certificate credentials
+    function access_certificate(bytes32 id) external view returns(certificate_info memory){
         return certificates[id];
     }
 
-    function recover_certificate (string memory your_name) public view returns(bytes32, string memory){
+    // takes in user's name and returns the certificate details
+    function recover_certificate (string memory your_name) external view returns(string memory, certificate_info memory){
         // if the certificate is lost
-        string memory message = "use the id in the 'access_certificates' function to get back the lost credentials.";
-        return (recovery_data[your_name], message);
+        string memory message = "Certificate recovered!";
+        return (message, certificates[recovery_data[your_name]]);
     }
 }
