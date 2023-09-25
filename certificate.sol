@@ -11,7 +11,6 @@ contract Certificate {
     mapping(bytes32 => certificate_info) public certificates;
     mapping (string => bytes32) public recovery_data;
 
-    bytes32[] public id_storage;
     // takes in the required credentials to build the certificate. 
     function build_certificate (string memory _name, string memory _date)public returns(bytes32) { 
         
