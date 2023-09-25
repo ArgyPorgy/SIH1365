@@ -12,8 +12,8 @@ contract Certificate {
     mapping (string => bytes32) public recovery_data;
 
     bytes32[] public id_storage;
-
-    function build_certificate (string memory _name, string memory _date)public returns(bytes32) {
+    // takes in the required credentials to build the certificate. 
+    function build_certificate (string memory _name, string memory _date)public returns(bytes32) { 
         
         
         bytes32 unique = keccak256(abi.encodePacked(_name, _date, msg.sender));
@@ -25,6 +25,7 @@ contract Certificate {
         return unique;
       
     }
+    // uses the unique id to access the certificate details
     function access_certificate(bytes32 id) public view returns(certificate_info memory){
         return certificates[id];
     }
