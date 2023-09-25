@@ -104,43 +104,30 @@ section .row:nth-child(even) div:nth-child(2){
 }
 .header{
     z-index: 1000;
-    width: 100vh;
-    
+    width: 100%;
+    height: auto;
     position: fixed;
     top: 5%;
     left: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    right: 5%;
+min-width: fit-content;
     
 }
-.center {
-    /* position: relative; */
-         
-    position: absolute;
-    
-    color: white;
-    font-size: 2vw;
-    text-shadow:0 0 10px #0f0;
-    font-family:'Varino', 'Nunito', sans-serif;
-    font-weight: 100;
-    top: 5%;
-    left: 50%;
-    margin-top: calc(-50%*height);
-    margin-top: calc(-50%*width);
 
-}
-.center h1{
+h1{
+    color: #fff;
     width: 100%;
-    animation: glow 10s linear infinite;
+    text-align: center;
+    
+    animation: glow 5s linear infinite;
 }
 @keyframes glow {
     from {
-        text-shadow: 0 0 10px #0f0 ;
+        text-shadow: 0 0 7px #0f0 ;
     }
     to{
         
-        text-shadow: 0 0 20px #0f0;
+        text-shadow: 0 0 15px #0f0;
     }
     
 }
@@ -156,18 +143,26 @@ section .row:nth-child(even) div:nth-child(2){
     background-color: gray;
     color: #fff;
 }
-
+.text{
+    display: inline;
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+}
+#login{
+    margin-right: 10px;
+}
 #right{
-    display: grid;
     
     color: white;
-    position: fixed;
-    right: 5%;
     
-    justify-content: space-between;
-    row-gap: 10px;
-    font-size: 150%;
- 
+    display: inline;
+    
+    align-items: flex-end;
+    
+    font-size: 120%;
+    margin-left: 72%;
+    /* margin-right: 50px; */
 }
 #right a 
 {
@@ -185,4 +180,13 @@ section .row:nth-child(even) div:nth-child(2){
 #right:hover{
     transition: text-shadow 2s ease;
     text-shadow: 0 0 2px ;
+}
+
+@media (max-width: 760px) {
+
+    #right{
+        display: block;
+        margin-left: -2%;
+        margin-top: 30px;
+    }
 }

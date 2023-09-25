@@ -45,13 +45,17 @@ def createCertificate(name, id, sign):
     draw.text(sign_position, signature, fill=Name_color, font=signfont)
 
     # Save or display the modified image
-    image.save(f'{Name}_{UniqueId}.jpg')
+    image.save(f'certificate/{Name}_{UniqueId}.jpg')
     return image
-# name = input("Enter name: ")
-# id = input('Enter your unique Id:')
-# sign = input("Enter sign: ")
-# createCertificate(name , id, sign )
 
+"""
+testing
+"""
+name = input("Enter name: ")
+id = input('Enter your unique Id:')
+sign = input("Enter sign: ")
+createCertificate(name , id, sign )
+print("your certificate has been generated! ")
 
 
 
