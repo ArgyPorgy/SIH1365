@@ -35,7 +35,7 @@
   </head>
   <body>
     <div class="header">
-      <h1 class="text">Encryptify</h1>
+      <h1 style="opacity: 0" class="text">Encryptify</h1>
 
       <a href="https://github.com/ArgyPorgy/SIH1365"
         ><i class="bx bxl-github"></i>
@@ -1089,5 +1089,13 @@
       </div>
     </section>
     <source src="/src/main.js" />
+    <script>
+      const item = document.querySelector(".text");
+      item.style.transition = "all 2s ease";
+
+      window.onload = setTimeout(() => {
+        item.style.opacity = 1;
+      }, 2000);
+    </script>
   </body>
 </html>
