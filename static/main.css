@@ -3,7 +3,6 @@
 *{
     margin :0;
     padding : 0;
-
 }
 section
 {
@@ -110,11 +109,11 @@ section .row:nth-child(even) div:nth-child(2){
     top: 5%;
     left: 5%;
     right: 5%;
-min-width: fit-content;
+    min-width: fit-content;
     
 }
 
-h1{
+h1, h2{
     color: #fff;
     width: 100%;
     text-align: center;
@@ -151,6 +150,7 @@ h1{
 }
 #login{
     margin-right: 10px;
+    margin-left: 10px;
 }
 #right{
     
@@ -189,4 +189,177 @@ h1{
         margin-left: -2%;
         margin-top: 30px;
     }
+}
+.sub{
+    color: #fff;
+    z-index: 1001;
+    width: 100%;
+    position: fixed;
+    top: 30%;
+    display: flex;
+    justify-content:space-evenly;
+    margin-left: 5px;
+}
+.exp{
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 2px solid rgba(0, 255, 0, 0.498);
+    max-width: 400px;
+    min-width: 100px;
+    padding: 10px 20px 20px 20px;
+    transition: 0.5s;
+}
+.exp:hover{
+    background: linear-gradient(to bottom, rgba(0, 255, 0, 0.223),transparent);
+    box-shadow: 0px 10px 15px 10px rgba(131, 103, 103, 0.204);
+    top: 0%;
+    transition: 0.5s;
+}
+.centre{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+.buton{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.2);
+    border: 2px solid gold;
+    color: white;
+    font-size: 20px;
+    transition: 0.5s;
+    z-index: 1;
+    position: relative;
+}
+.buton:hover{
+    letter-spacing : 3px;
+    color: #111;
+    font-weight: 600;
+}
+.buton::before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -4px;
+    width: 30px;
+    height: 5px;
+    background:#0f0;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.buton:hover::before{
+    bottom: 0;
+    height: 100%;
+    width: 90%;
+    border-radius: 30px;
+    transition-delay: 0.1s;
+}
+/* login pop out -- blur */
+
+#blur.active{
+    filter: blur(5px);
+}
+body{
+    overflow: hidden;
+}
+#popup{
+    z-index: 2000;
+    color: #fff;
+    position: fixed; 
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(255,255,255,0.3);
+    background: burlywood;
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s;
+}
+#popup.active{
+    top: 40%;
+    visibility: visible;
+    opacity: 1;
+    transition: 1s;
+}
+/* form */
+.regist{
+    width: 300px;
+    margin: 5% auto;
+    height: 400px;
+    overflow: hidden;
+}
+.btn{
+    width: 220px;
+    margin: 0px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+.swap{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#design{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 128, 0, 0.802),rgba(0, 0, 0, 0.299));
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.close{
+    padding-left: 95%;
+}
+.x{
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 0 red;
+}
+.x:hover{
+    background: #ffad06;   
+}
+.x:active{
+    background: #ff105f;
+}
+.input{
+    top: 140px;
+    position: absolute;
+    transition: 0.5s;
+    padding-right: 50px;
+    width: 300px;
+    /* overflow: hidden; */
+}
+.field{
+    width: 96%;
+    padding: 10px 0;
+    padding-bottom: 10px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    background: transparent;
+}
+#s_btn{
+    padding: 10px 30px;
+}
+#login{
+    left: 50px;
+}
+#official{
+    left: 500px;
 }

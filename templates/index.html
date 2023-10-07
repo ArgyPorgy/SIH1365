@@ -33,7 +33,8 @@
     <link href="https://fonts.cdnfonts.com/css/varino" rel="stylesheet" />
     <!-- varino font -->
   </head>
-  <body>
+<body>
+  <div  id="blur">
     <div class="header">
       <h1 class="text">Encryptify</h1>
 
@@ -42,8 +43,20 @@
       </a>
 
       <div id="right">
+        <!-- <a href="#" onclick="toggle()"> Register </a> -->
         <a id="login" href="/templates/login.html">Login</a>
         <a href="#"> About us </a>
+      </div>
+    </div>
+    <div class="sub">
+      <div class="exp">
+        <h2>REGISTRATION</h2>
+        <br>
+        <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed necessitatibus ex amet. Dolor dolorum numquam ipsam eveniet cupiditate similique ullam, fugit adipisci repellat deserunt? Nisi facilis repellat dolores reprehenderit ut.</P>
+        <br>
+        <div class="centre">
+          <button onclick="toggle()" class="buton">Register</button>
+        </div>
       </div>
     </div>
     <section>
@@ -1088,6 +1101,65 @@
         </div>
       </div>
     </section>
+  </div>
+
+    <!-- the registration form -->
+    <div class="regist" id="popup">
+      <div class="box">
+        <div class="close">
+          <button class="x" type="menu" onclick="toggle()">X</button>
+        </div>
+        <div class="btn">
+          <div id="design"></div>
+            <button type="button" class="swap" onclick="user()"> User</button>
+            <button type="button" class="swap" onclick="office()"> Officials</button>
+        </div>
+        <form id="user" class="input">
+          <input type="text" class="field" placeholder="NAME" required>
+          <input type="number" class="field" placeholder="ADDHAR CARD NUMBER(12 DIGITS)" required>
+          <input type="text" class="field" placeholder="METAMASK WALLET ID" required>
+          <input type="password" class="field" placeholder="ENTER PASSWORD" required>
+          <input type="text" class="field" placeholder="NAME" required>
+          <input type="text" class="field" placeholder="NAME" required>
+          <div class="centre" id="s_btn">
+            <button type="submit" class="buton">SUBMIT</button>
+          </div>
+        </form>
+        <form id="official" class="input">
+          <input type="text" class="field" placeholder="NAME OF ORGANIZATION" required>
+          <input type="text" class="field" placeholder="TYPE OF ORGANIZATION" required>
+          <input type="text" class="field" placeholder="METAMASK WALLET ID" required>
+          <input type="text" class="field" placeholder="NAME" required>
+          <input type="text" class="field" placeholder="NAME" required>
+          <input type="text" class="field" placeholder="NAME" required>
+          <div class="centre" id="s_btn">
+            <button type="submit" class="buton">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
     <source src="/src/main.js" />
+    <script type="text/javascript">
+        function toggle(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active')
+        var popup=document.getElementById('popup');
+        popup.classList.toggle('active');
+      }
+      var x=document.getElementById('user');
+      var y=document.getElementById('official');
+      var z=document.getElementById('design');
+      function user(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+      }
+      function office(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+    </script>
   </body>
 </html>
