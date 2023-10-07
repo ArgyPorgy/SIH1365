@@ -36,7 +36,7 @@
 <body>
   <div  id="blur">
     <div class="header">
-      <h1 class="text">Encryptify</h1>
+      <h1 style="opacity: 0" class="text">Encryptify</h1>
 
       <a href="https://github.com/ArgyPorgy/SIH1365"
         ><i class="bx bxl-github"></i>
@@ -1140,26 +1140,5 @@
     </div>
 
     <source src="/src/main.js" />
-    <script type="text/javascript">
-        function toggle(){
-        var blur = document.getElementById('blur');
-        blur.classList.toggle('active')
-        var popup=document.getElementById('popup');
-        popup.classList.toggle('active');
-      }
-      var x=document.getElementById('user');
-      var y=document.getElementById('official');
-      var z=document.getElementById('design');
-      function user(){
-        x.style.left = "50px";
-        y.style.left = "450px";
-        z.style.left = "0";
-      }
-      function office(){
-        x.style.left = "-400px";
-        y.style.left = "50px";
-        z.style.left = "110px";
-      }
-    </script>
   </body>
 </html>
