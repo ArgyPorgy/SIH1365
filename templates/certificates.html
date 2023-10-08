@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-color: #2f85e1;
+        }
+
+
+        h1 {
+            color: #ffffff;
+            font-family: 'Raleway', sans-serif;
+            font-size: 62px;
+            font-weight: 800;
+            line-height: 72px;
+            margin: 0 0 24px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+
+        .grid-container {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(3, 300px);
+            grid-template-rows: repeat(3, 250px);
+            padding: 10px;
+            justify-items: end;
+        }
+
+        .grid-item {
+            border: 1px;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            background-color: rgba(101, 175, 240, 0.541);
+
+        }
+
+        img {
+            height: 200px;
+            width: 250px;
+
+        }
+
+        img:hover {
+            height: 200.5px;
+            width: 250.5px;
+        }
+
+        @media (min-width:300px) {
+            .grid-container {
+                grid-template-columns: repeat(1, 300px);
+                grid-template-rows: repeat(1, 250px);
+            }
+        }
+
+        @media (min-width:900px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 300px);
+                grid-template-rows: repeat(3, 250px);
+            }
+
+        }
+
+        .addcertificate {
+            padding: 7px 15px;
+            background-color: #0c6cc0;
+            color: #fff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 30px;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-family: 'Raleway', sans-serif;
+            text-align: center;
+        }
+
+        #reader {
+            width: 230px;
+            height: 200px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        #reader__scan_region {
+            background: #a5bed9;
+        }
+
+        .scanner {
+            display: grid;
+            justify-content: center;
+        }
+        #button{
+            margin: 0% 50%;
+        }
+    </style>
+    <title>Certificate</title>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.4/html5-qrcode.min.js"
+        integrity="sha512-k/KAe4Yff9EUdYI5/IAHlwUswqeipP+Cp5qnrsUjTPCgl51La2/JhyyjNciztD7mWNKLSXci48m7cctATKfLlQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <section>
+        <h1>Certificates</h1>
+        <div class="grid-container">
+            <div class="grid-item"><img src="Arghya Choudhary_certificate.jpg" alt=""></div>
+            <div class="grid-item"><img src="Arghya Choudhary_certificate.jpg" alt=""></div>
+            <div class="grid-item"><img src="Arghya Choudhary_certificate.jpg" alt=""></div>
+            <div class="grid-item"><img src="Arghya Choudhary_certificate.jpg" alt=""></div>
+            <div class="grid-item"><img src="Arghya Choudhary_certificate.jpg" alt=""></div>
+            <div class="grid-item"><img src="Arghya Choudhary_certificate.jpg" alt=""></div>
+            <div class="grid-item"><img src="Arghya Choudhary_certificate.jpg" alt=""></div>
+            <div class="grid-item"><img src="Arghya Choudhary_certificate.jpg" alt=""></div>
+
+        </div>
+        <br><br>
+    </section>
+    <section id="button"> <button class="addcertificate" id="addcertificate">+</button></section>
+
+    <section>
+        <div class="scanner">
+            <h2 id="scanner-heading"></h2>
+            <div id="reader"></div>
+        </div>
+    </section>
+</body>
+
+</html>
+<script>
+    const button = document.getElementById("addcertificate");
+    const heading = document.getElementById("scanner-heading");
+    button.addEventListener("click", function () {
+        heading.innerHTML = "Scan Qr";
+        function onScanSuccess(qrCodeMessage) {
+            console.log(qrCodeMessage);
+        }
+
+        function onScanError(errorMessage) {
+            alert("Error !! Try Again....");
+        }
+
+        var html5QrCodeScanner = new Html5QrcodeScanner("reader", {
+            fps: 10,
+            qrbox: 250
+        });
+        html5QrCodeScanner.render(onScanSuccess, onScanError);
+    });
+
+
+
+</script>
