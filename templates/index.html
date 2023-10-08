@@ -52,7 +52,8 @@
       <div class="exp">
         <h2>REGISTRATION</h2>
         <br>
-        <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed necessitatibus ex amet. Dolor dolorum numquam ipsam eveniet cupiditate similique ullam, fugit adipisci repellat deserunt? Nisi facilis repellat dolores reprehenderit ut.</P>
+        <P>Dear Guest,</P>
+        <p>Welcome to the sole website where you can have the most valid certificates offered by the Indian Government. Both users and official organizations, for the initials, register your credentials in the registration form below.</p>
         <br>
         <div class="centre">
           <button onclick="toggle()" class="buton">Register</button>
@@ -1115,23 +1116,23 @@
             <button type="button" class="swap" onclick="office()"> Officials</button>
         </div>
         <form id="user" class="input">
-          <input type="text" class="field" placeholder="NAME" required>
-          <input type="number" class="field" placeholder="ADDHAR CARD NUMBER(12 DIGITS)" required>
-          <input type="text" class="field" placeholder="METAMASK WALLET ID" required>
+          <input type="text" class="field" placeholder="ENTER NAME" required>
+          <input type="number" class="field" placeholder="ENTER ADDHAR CARD NUMBER(12 DIGITS)" required>
+          <input type="text" class="field" placeholder="ENTER METAMASK WALLET ID" required>
           <input type="password" class="field" placeholder="ENTER PASSWORD" required>
-          <input type="text" class="field" placeholder="NAME" required>
-          <input type="text" class="field" placeholder="NAME" required>
+          <input type="text" class="field" placeholder="others" required>
+          <input type="text" class="field" placeholder="others" required>
           <div class="centre" id="s_btn">
             <button type="submit" class="buton">SUBMIT</button>
           </div>
         </form>
         <form id="official" class="input">
-          <input type="text" class="field" placeholder="NAME OF ORGANIZATION" required>
-          <input type="text" class="field" placeholder="TYPE OF ORGANIZATION" required>
-          <input type="text" class="field" placeholder="METAMASK WALLET ID" required>
-          <input type="text" class="field" placeholder="NAME" required>
-          <input type="text" class="field" placeholder="NAME" required>
-          <input type="text" class="field" placeholder="NAME" required>
+          <input type="text" class="field" placeholder="ENTER NAME OF ORGANIZATION" required>
+          <input type="text" class="field" placeholder="ENTER TYPE OF ORGANIZATION" required>
+          <input type="text" class="field" placeholder="ENTER METAMASK WALLET ID" required>
+          <input type="text" class="field" placeholder="others" required>
+          <input type="text" class="field" placeholder="others" required>
+          <input type="text" class="field" placeholder="others" required>
           <div class="centre" id="s_btn">
             <button type="submit" class="buton">SUBMIT</button>
           </div>
@@ -1160,6 +1161,12 @@
         y.style.left = "50px";
         z.style.left = "110px";
       }
+    const item = document.querySelector(".text");
+      item.style.transition = "all 2s ease";
+
+      window.onload = setTimeout(() => {
+        item.style.opacity = 1;
+      }, 2000);
     </script>
   </body>
 </html>
