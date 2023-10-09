@@ -1126,13 +1126,19 @@
             <button type="submit" class="buton">SUBMIT</button>
           </div>
         </form>
-        <form id="official" class="input">
-          <input type="text" class="field" placeholder="ENTER NAME OF ORGANIZATION" required>
-          <input type="text" class="field" placeholder="ENTER TYPE OF ORGANIZATION" required>
-          <input type="text" class="field" placeholder="ENTER METAMASK WALLET ID" required>
+        <form method = 'POST' enctype = "multipart/form-data" id="official" class="input">
+          {{ form.hidden_tag() }}
+          <div id="user-form">
+          {{ form.orgname.label }} {{ form.orgname(class="field", placeholder="ENTER NAME") }}
+        {{ form.orgtype.label }} {{ form.orgtype(class="field", placeholder="ENTER TYPE OF ORGANIZATION") }}
+        {{ form.metawallet.label }} {{ form.metawallet(class="field", placeholder="ENTER METAMASK WALLET ID") }}
+     
+          <!-- <input type="text" class="field" name = "orgname" placeholder="ENTER NAME OF ORGANIZATION" required>
+          <input type="text" class="field" name = "orgtype" placeholder="ENTER TYPE OF ORGANIZATION" required>
+          <input type="text" class="field" name = "metawallet" placeholder="ENTER METAMASK WALLET ID" required>
           <input type="text" class="field" placeholder="others" required>
           <input type="text" class="field" placeholder="others" required>
-          <input type="text" class="field" placeholder="others" required>
+          <input type="text" class="field" placeholder="others" required> -->
           <div class="centre" id="s_btn">
             <button type="submit" class="buton">SUBMIT</button>
           </div>
