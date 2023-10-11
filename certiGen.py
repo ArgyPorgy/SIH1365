@@ -1,4 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont
+import qrcode
 def createCertificate(name, id, sign):
     # Open the image
     image = Image.open("templates/temp.jpg")
@@ -37,12 +38,26 @@ def createCertificate(name, id, sign):
     sign_position = (685,810)
     signature = sign
     signfont = ImageFont.truetype("arial.ttf", size=35)
-
+    '''
+    This part below defines the characteristics of the Qr-Code
+    '''
+    data = 'id'
+    # Encoding data using make() function
+    qr_img = qrcode.make(data)
 
     # Draw the text on the image
     draw.text(Name_position, Name, fill=Name_color, font=Namefont)
     draw.text(id_position, UniqueId, fill=Name_color, font=idfont)
     draw.text(sign_position, signature, fill=Name_color, font=signfont)
+    
+    #imagepaste
+    Image1copy = image.copy()
+    Image2 = qr_img
+    Image2copy = Image2.copy()
+    Image2copy=  Image2copy.resize((150, 150))
+ 
+    # paste image giving dimensions
+    Image1copy.paste(Image2copy, (1185, 760))
 
     # Save or display the modified image
     image.save(f'certificate/{Name}_{UniqueId}.jpg')
