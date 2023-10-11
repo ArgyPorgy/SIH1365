@@ -1115,35 +1115,34 @@
             <button type="button" class="swap" onclick="user()"> User</button>
             <button type="button" class="swap" onclick="office()"> Officials</button>
         </div>
-        <form id="user" class="input">
-          <input type="text" class="field" placeholder="ENTER NAME" required>
-          <input type="number" class="field" placeholder="ENTER ADDHAR CARD NUMBER(12 DIGITS)" required>
-          <input type="text" class="field" placeholder="ENTER METAMASK WALLET ID" required>
-          <input type="password" class="field" placeholder="ENTER PASSWORD" required>
-          <input type="text" class="field" placeholder="others" required>
-          <input type="text" class="field" placeholder="others" required>
-          <div class="centre" id="s_btn">
-            <button type="submit" class="buton">SUBMIT</button>
-          </div>
-        </form>
-        <form method = 'POST' enctype = "multipart/form-data" id="official" class="input">
+
+        <form method='POST' enctype="multipart/form-data" id="user" class="input">
           {{ form.hidden_tag() }}
-          <div id="user-form">
-          {{ form.orgname.label }} {{ form.orgname(class="field", placeholder="ENTER NAME") }}
-        {{ form.orgtype.label }} {{ form.orgtype(class="field", placeholder="ENTER TYPE OF ORGANIZATION") }}
-        {{ form.metawallet.label }} {{ form.metawallet(class="field", placeholder="ENTER METAMASK WALLET ID") }}
-     
-          <!-- <input type="text" class="field" name = "orgname" placeholder="ENTER NAME OF ORGANIZATION" required>
-          <input type="text" class="field" name = "orgtype" placeholder="ENTER TYPE OF ORGANIZATION" required>
-          <input type="text" class="field" name = "metawallet" placeholder="ENTER METAMASK WALLET ID" required>
-          <input type="text" class="field" placeholder="others" required>
-          <input type="text" class="field" placeholder="others" required>
-          <input type="text" class="field" placeholder="others" required> -->
+          <input type="hidden" name="user_form" value="1">
+          {{ form.username.label }} {{ form.username(class="field", placeholder="ENTER YOUR NAME") }}
+          {{ form.aadhar.label }} {{ form.aadhar(class="field", placeholder="ENTER YOUR AADHAR NUMBER") }}
+          {{ form.user_metawallet.label }} {{ form.user_metawallet(class="field", placeholder="ENTER METAMASK WALLET ID") }}
+          {{ form.password.label }} {{ form.password(class="field", placeholder="ENTER PASSWORD") }}
           <div class="centre" id="s_btn">
             <button type="submit" class="buton">SUBMIT</button>
           </div>
+      </form>
+      
+      <form method='POST' enctype="multipart/form-data" id="official" class="input">
+          {{ form.hidden_tag() }}
+          <input type="hidden" name="org_form" value="1">
+          {{ form.orgname.label }}{{ form.orgname(class="field", placeholder="ENTER ORGANIZATION NAME") }}
+          {{ form.orgtype.label }}{{ form.orgtype(class="field", placeholder="ENTER TYPE OF ORGANIZATION") }}
+          {{ form.org_metawallet.label }}{{ form.org_metawallet(class="field", placeholder="ENTER METAMASK WALLET ID") }}
+          <div class="centre" id="s_btn">
+            <button type="submit" class="buton">SUBMIT</button>
+          </div>
+      </form>
+      
         </form>
+        
       </div>
+      
     </div>
 
     <source src="/src/main.js" />
@@ -1158,11 +1157,13 @@
       var y=document.getElementById('official');
       var z=document.getElementById('design');
       function user(){
+        console.log("Switched to user form");
         x.style.left = "50px";
         y.style.left = "450px";
         z.style.left = "0";
       }
       function office(){
+        console.log("Switched to official form");
         x.style.left = "-400px";
         y.style.left = "50px";
         z.style.left = "110px";
