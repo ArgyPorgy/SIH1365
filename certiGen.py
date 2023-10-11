@@ -51,13 +51,12 @@ def createCertificate(name, id, sign):
     draw.text(sign_position, signature, fill=Name_color, font=signfont)
     
     #imagepaste
-    Image1copy = image.copy()
     Image2 = qr_img
     Image2copy = Image2.copy()
-    Image2copy=  Image2copy.resize((150, 150))
+    Image2copy =  Image2copy.resize((150, 150))
  
     # paste image giving dimensions
-    Image1copy.paste(Image2copy, (1185, 760))
+    image.paste(Image2copy, (1185, 760))
 
     # Save or display the modified image
     image.save(f'certificate/{Name}_{UniqueId}.jpg')
