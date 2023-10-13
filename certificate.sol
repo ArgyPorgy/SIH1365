@@ -7,16 +7,17 @@ contract Certificate {
         string name;
         string date_of_issue;
         bytes32 unique_id;
+        string web3StorageUrl;
     }
     mapping(bytes32 => certificate_info) certificates;
     mapping (string => bytes32) public recovery_data;
 
     // takes in user's name and current date to build the certificate. returns a unique id
     // which is used to access the certificate data in the 'access_certificates' function below
-    function build_certificate (string memory _name, string memory _date)external returns(bytes32) {
+    function build_certificate (string memory _name, string memory _date, string memory _web3StorageUrl)external returns(bytes32) {
         bytes32 unique = keccak256(abi.encodePacked(_name, _date, msg.sender));
         certificate_info memory new_certificate;
-        new_certificate = certificate_info({name: _name, date_of_issue: _date, unique_id: unique});
+        new_certificate = certificate_info({name: _name, date_of_issue: _date, unique_id: unique, web3StorageUrl:_web3StorageUrl});
         
         certificates[unique] = new_certificate;
         recovery_data[_name] = unique;
