@@ -1119,10 +1119,10 @@
         <form method='POST' enctype="multipart/form-data" id="user" class="input">
           {{ form.hidden_tag() }}
           <input type="hidden" name="user_form" value="1">
-          {{ form.username.label }} {{ form.username(class="field", placeholder="ENTER YOUR NAME") }}
-          {{ form.aadhar.label }} {{ form.aadhar(class="field", placeholder="ENTER YOUR AADHAR NUMBER") }}
-          {{ form.user_metawallet.label }} {{ form.user_metawallet(class="field", placeholder="ENTER METAMASK WALLET ID") }}
-          {{ form.password.label }} {{ form.password(class="field", placeholder="ENTER PASSWORD") }}
+          {{ form.username.label }} <input type="text" class="field" placeholder="ENTER YOUR NAME" name="username">
+          {{ form.aadhar.label }} <input type="text" class="field" placeholder="ENTER YOUR AADHAR NUMBER" name="aadhar">
+          {{ form.user_metawallet.label }} <input type="text" class="field" placeholder="ENTER METAMASK WALLET ID" name="user_metawallet">
+          {{ form.password.label }} <input type="password" class="field" placeholder="ENTER PASSWORD" name="password">
           <div class="centre" id="s_btn">
             <button type="submit" class="buton">SUBMIT</button>
           </div>
@@ -1131,9 +1131,9 @@
       <form method='POST' enctype="multipart/form-data" id="official" class="input">
           {{ form.hidden_tag() }}
           <input type="hidden" name="org_form" value="1">
-          {{ form.orgname.label }}{{ form.orgname(class="field", placeholder="ENTER ORGANIZATION NAME") }}
-          {{ form.orgtype.label }}{{ form.orgtype(class="field", placeholder="ENTER TYPE OF ORGANIZATION") }}
-          {{ form.org_metawallet.label }}{{ form.org_metawallet(class="field", placeholder="ENTER METAMASK WALLET ID") }}
+          {{ form.orgname.label }}<input type="text" class="field" placeholder="ENTER YOUR NAME" name="orgname">
+          {{ form.orgtype.label }}<input type="text" class="field" placeholder="ENTER YOUR NAME" name="orgtype">
+          {{ form.org_metawallet.label }}<input type="text" class="field" placeholder="ENTER YOUR NAME" name="org_metawallet">
           <div class="centre" id="s_btn">
             <button type="submit" class="buton">SUBMIT</button>
           </div>

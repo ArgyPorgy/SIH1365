@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Dashboard</title>
+</head>
+
+<body>
+    <button id="connect-metamask-button">Connect MetaMask</button>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            // Check if MetaMask is installed
+            if (window.ethereum) {
+                window.web3 = new Web3(window.ethereum);
+
+                try {
+                    // Request access to MetaMask accounts
+                    await window.ethereum.enable();
+
+                    // Check if the user is connected
+                    const accounts = await window.web3.eth.getAccounts();
+                    if (accounts.length > 0) {
+                        console.log('Connected to MetaMask:', accounts[0]);
+                        // You can perform further actions here after successful connection
+                    } else {
+                        console.log('MetaMask is installed but not connected.');
+                    }
+                } catch (error) {
+                    console.error('Error connecting to MetaMask:', error);
+                }
+            } else {
+                console.error('MetaMask extension not found.');
+            }
+        });
+
+        async function startconnect() {
+        if (typeof window.ethereum !== "undefined") {
+          console.log("MetaMask is installed. Let's go!");
+        } else {
+          console.log("MetaMask is not installed.");
+        }
+
+        try {
+          await window.ethereum.request({ method: "eth_requestAccounts" });
+          alert("MetaMask is connected!");
+        } catch (error) {
+          alert("Error connecting to MetaMask: " + error.message);
+        }
+      }
+
+      startconnect();
+    </script>
+</body>
+
+</html>
+
