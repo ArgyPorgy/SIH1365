@@ -33,1076 +33,1092 @@
     <link href="https://fonts.cdnfonts.com/css/varino" rel="stylesheet" />
     <!-- varino font -->
   </head>
-<body>
-  <div  id="blur">
-    <div class="header">
-      <h1 style="opacity: 0" class="text">Encryptify</h1>
+  <body>
+    <div id="blur">
+      <div class="header">
+        <h1 style="opacity: 0" class="text">Encryptify</h1>
 
-      <a href="https://github.com/ArgyPorgy/SIH1365"
-        ><i class="bx bxl-github"></i>
-      </a>
+        <a href="https://github.com/ArgyPorgy/SIH1365"
+          ><i class="bx bxl-github"></i>
+        </a>
 
-      <div id="right">
-        <!-- <a href="#" onclick="toggle()"> Register </a> -->
-        <a id="login" href="/templates/login.html">Login</a>
-        <a href="#"> About us </a>
+        <div id="right">
+          <!-- <a href="#" onclick="toggle()"> Register </a> -->
+          <a id="login" href="/templates/login.html">Login</a>
+          <a href="#"> About us </a>
+        </div>
       </div>
+      <div class="loginMessage">
+        {{msg}}
+        <button
+          onclick="
+        document.querySelector('.loginMessage').style.transition= '1s';
+        document.querySelector('.loginMessage').style.opacity = 0;
+        "
+        >
+          x
+        </button>
+      </div>
+      <div class="sub">
+        <div class="exp">
+          <h2>REGISTRATION</h2>
+          <br />
+          <p>Dear Guest,</p>
+          <p>
+            Welcome to the sole website where you can have the most valid
+            certificates offered by the Indian Government. Both users and
+            official organizations, for the initials, register your credentials
+            in the registration form below.
+          </p>
+          <br />
+          <div class="centre">
+            <button onclick="toggle()" class="buton">Register</button>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+          <div>
+            <i class="fa fa-anchor" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-balance-scale" aria-hidden="true"></i>
+            <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
+            <i
+              class="fa fa-american-sign-language-interpreting"
+              aria-hidden="true"
+            ></i>
+            <i class="fa fa-university" aria-hidden="true"></i>
+            <i class="fa fa-battery-full" aria-hidden="true"></i>
+            <i class="fa fa-barcode" aria-hidden="true"></i>
+            <i class="fa fa-address-book" aria-hidden="true"></i>
+            <i class="fa fa-window-close" aria-hidden="true"></i>
+            <i class="fa fa-bolt" aria-hidden="true"></i>
+            <i class="fa fa-address-card" aria-hidden="true"></i>
+            <i class="fa fa-handshake-o" aria-hidden="true"></i>
+            <i class="fa fa-free-code-camp" aria-hidden="true"></i>
+            <i class="fa fa-window-maximize" aria-hidden="true"></i>
+            <i class="fa fa-cc" aria-hidden="true"></i>
+            <i class="fa fa-check-circle-o" aria-hidden="true"></i>
+            <i class="fa-solid fa-user-secret"></i>
+            <i class="fa fa-download" aria-hidden="true"></i>
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="sub">
-      <div class="exp">
-        <h2>REGISTRATION</h2>
-        <br>
-        <P>Dear Guest,</P>
-        <p>Welcome to the sole website where you can have the most valid certificates offered by the Indian Government. Both users and official organizations, for the initials, register your credentials in the registration form below.</p>
-        <br>
-        <div class="centre">
-          <button onclick="toggle()" class="buton">Register</button>
-        </div>
-      </div>
-    </div>
-    <section>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-        <div>
-          <i class="fa fa-anchor" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-balance-scale" aria-hidden="true"></i>
-          <i class="fa fa-assistive-listening-systems" aria-hidden="true"></i>
-          <i
-            class="fa fa-american-sign-language-interpreting"
-            aria-hidden="true"
-          ></i>
-          <i class="fa fa-university" aria-hidden="true"></i>
-          <i class="fa fa-battery-full" aria-hidden="true"></i>
-          <i class="fa fa-barcode" aria-hidden="true"></i>
-          <i class="fa fa-address-book" aria-hidden="true"></i>
-          <i class="fa fa-window-close" aria-hidden="true"></i>
-          <i class="fa fa-bolt" aria-hidden="true"></i>
-          <i class="fa fa-address-card" aria-hidden="true"></i>
-          <i class="fa fa-handshake-o" aria-hidden="true"></i>
-          <i class="fa fa-free-code-camp" aria-hidden="true"></i>
-          <i class="fa fa-window-maximize" aria-hidden="true"></i>
-          <i class="fa fa-cc" aria-hidden="true"></i>
-          <i class="fa fa-check-circle-o" aria-hidden="true"></i>
-          <i class="fa-solid fa-user-secret"></i>
-          <i class="fa fa-download" aria-hidden="true"></i>
-          <i class="fa fa-gamepad" aria-hidden="true"></i>
-        </div>
-      </div>
-    </section>
-  </div>
 
     <!-- the registration form -->
     <div class="regist" id="popup">
@@ -1112,68 +1128,123 @@
         </div>
         <div class="btn">
           <div id="design"></div>
-            <button type="button" class="swap" onclick="user()"> User</button>
-            <button type="button" class="swap" onclick="office()"> Officials</button>
+          <button type="button" class="swap" onclick="user()">User</button>
+          <button type="button" class="swap" onclick="office()">
+            Officials
+          </button>
         </div>
 
-        <form method='POST' enctype="multipart/form-data" id="user" class="input">
-          {{ form.hidden_tag() }}
-          <input type="hidden" name="user_form" value="1">
-          {{ form.username.label }} <input type="text" class="field" placeholder="ENTER YOUR NAME" name="username">
-          {{ form.aadhar.label }} <input type="text" class="field" placeholder="ENTER YOUR AADHAR NUMBER" name="aadhar">
-          {{ form.user_metawallet.label }} <input type="text" class="field" placeholder="ENTER METAMASK WALLET ID" name="user_metawallet">
-          {{ form.password.label }} <input type="password" class="field" placeholder="ENTER PASSWORD" name="password">
+        <form
+          method="POST"
+          enctype="multipart/form-data"
+          id="user"
+          class="input"
+        >
+          Username
+          <input type="hidden" name="user_form" value="1" />
+
+          <input
+            type="text"
+            class="field"
+            placeholder="ENTER YOUR NAME"
+            name="username"
+          />
+          Aadhar Number
+          <input
+            type="text"
+            class="field"
+            placeholder="ENTER YOUR AADHAR NUMBER"
+            name="aadhar"
+          />
+          Metamask Wallet ID
+          <input
+            type="text"
+            class="field"
+            placeholder="ENTER METAMASK WALLET ID"
+            name="user_metawallet"
+          />
+          Password
+          <input
+            type="password"
+            class="field"
+            placeholder="ENTER PASSWORD"
+            name="password"
+          />
           <div class="centre" id="s_btn">
             <button type="submit" class="buton">SUBMIT</button>
           </div>
-      </form>
-      
-      <form method='POST' enctype="multipart/form-data" id="official" class="input">
-          {{ form.hidden_tag() }}
-          <input type="hidden" name="org_form" value="1">
-          {{ form.orgname.label }}<input type="text" class="field" placeholder="ENTER YOUR NAME" name="orgname">
-          {{ form.orgtype.label }}<input type="text" class="field" placeholder="ENTER YOUR NAME" name="orgtype">
-          {{ form.org_metawallet.label }}<input type="text" class="field" placeholder="ENTER YOUR NAME" name="org_metawallet">
-          <div class="centre" id="s_btn">
-            <button type="submit" class="buton">SUBMIT</button>
-          </div>
-      </form>
-      
         </form>
-        
+
+        <form
+          method="POST"
+          enctype="multipart/form-data"
+          id="official"
+          class="input"
+        >
+          <input type="hidden" name="org_form" value="1" />
+          <input
+            type="text"
+            class="field"
+            placeholder="ENTER YOUR NAME"
+            name="orgname"
+          />
+          <input
+            type="text"
+            class="field"
+            placeholder="ENTER YOUR NAME"
+            name="orgtype"
+          />
+          <input
+            type="text"
+            class="field"
+            placeholder="ENTER YOUR NAME"
+            name="org_metawallet"
+          />
+          <div class="centre" id="s_btn">
+            <button type="submit" class="buton">SUBMIT</button>
+          </div>
+        </form>
+        <!-- </form> -->
       </div>
-      
     </div>
 
     <source src="/src/main.js" />
-  <script type="text/javascript">
-        function toggle(){
-        var blur = document.getElementById('blur');
-        blur.classList.toggle('active')
-        var popup=document.getElementById('popup');
-        popup.classList.toggle('active');
+    <script type="text/javascript">
+      function toggle() {
+        var blur = document.getElementById("blur");
+        blur.classList.toggle("active");
+        var popup = document.getElementById("popup");
+        popup.classList.toggle("active");
       }
-      var x=document.getElementById('user');
-      var y=document.getElementById('official');
-      var z=document.getElementById('design');
-      function user(){
+      var x = document.getElementById("user");
+      var y = document.getElementById("official");
+      var z = document.getElementById("design");
+      function user() {
         console.log("Switched to user form");
         x.style.left = "50px";
         y.style.left = "450px";
         z.style.left = "0";
       }
-      function office(){
+      function office() {
         console.log("Switched to official form");
         x.style.left = "-400px";
         y.style.left = "50px";
         z.style.left = "110px";
       }
-    const item = document.querySelector(".text");
+      const item = document.querySelector(".text");
       item.style.transition = "all 2s ease";
 
       window.onload = setTimeout(() => {
         item.style.opacity = 1;
       }, 2000);
+
+      function restrictInput(event) {
+        const input = event.target;
+        const restrictedCharacters = /[^a-zA-Z\s]/; // Regular expression to restrict special symbols and numbers
+
+        // Remove any restricted characters from the input
+        input.value = input.value.replace(restrictedCharacters, "");
+      }
     </script>
   </body>
 </html>

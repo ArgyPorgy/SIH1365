@@ -363,3 +363,28 @@ body{
 #official{
     left: 500px;
 }
+
+.loginMessage
+{
+    
+    position: fixed;
+    color: #222;
+    z-index: 10000000;
+    bottom: 2%;
+
+    color: #fff;
+    border: 1px solid white;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 10px;
+    
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.loginMessage button{
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    color: #ff105f;
+
+}
