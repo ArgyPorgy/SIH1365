@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Certificates</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        background-color: rgb(29, 122, 216);
+        color: white;
+    }
+    h1{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+.search-container{
+  width: 490px;
+  display: block;
+  margin: 0 35%;
+}
+
+input#searchbox{
+  margin: 0 auto;
+  width: 50%;
+  height: 30px;
+  padding: 0 20px;
+  font-size: 1rem;
+  border: 1px solid #D0CFCE;
+  outline: none;
+}
+ 
+</style>
+
+<body>
+    <h1>Certificates Details</h1>
+    <form class="search-container">
+     <input type="text" id="searchbox" placeholder="Enter Aadhar Number..." onkeyup="searchFun()">
+    </form>
+    <br>
+     <table id="mytable">
+        <tr id="head">
+            <th>Aadhar Card</th>
+            <th>Name</th>
+            <th>Id</th>
+        </tr>
+        <tr>
+            <td>423651</td>
+            <td>Ramesh</td>
+            <td>5#h&1k</td>
+        </tr>
+        <tr>
+            <td>861742</td>
+            <td>Suresh</td>
+            <td>a@bd6@</td>
+        </tr>
+        <tr>
+            <td>723641</td>
+            <td>Ram</td>
+            <td>7%4$fd</td>
+        </tr>
+        <tr>
+            <td>796412</td>
+            <td>RP</td>
+            <td>7d4!7*</td>
+        </tr>
+        <tr>
+            <td>963425</td>
+            <td>Nigga</td>
+            <td>3#h*5&</td>
+        </tr>
+    </table>
+</body>
+<script>
+    const searchFun = () => {
+        let search = document.getElementById('searchbox').value;
+        let mytable = document.getElementById('mytable');
+        let tra = mytable.getElementsByTagName('tr');
+        for (var i = 1; i <= tra.length; i++) {
+            let td = tra[i].getElementsByTagName('td')[0].innerHTML;
+
+            if (td) {
+                let textvalue = td;
+                if (textvalue.indexOf(search) > -1) {
+                    tra[i].style.display = "";
+                }
+                else {
+                    tra[i].style.display = "none";
+                }
+            }
+        }
+    }
+
+
+</script>
+
+</html>
