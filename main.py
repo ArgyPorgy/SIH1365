@@ -89,29 +89,46 @@ soham's part of DBMS
 
 # considering database has been created already
 msg = ""
-@app.route("/", methods = ['GET','POST'])
+
+@app.route("/", methods=['GET', 'POST'])
 def index():
-    
-    if request.method == 'POST' and request.form['user_form']:#this is only the user side
+    global msg
+    if request.method == 'POST':
         try:
-            user = request.form['username']
-            adhr = request.form['aadhar']
-            userMW = request.form['user_metawallet']
-            pswd = request.form['password']
-            cryptPass = bcrypt.generate_password_hash(pswd).decode('utf-8')
-            with sqlite3.connect('userData.db') as conn:
-                cur = conn.cursor()
-                cur.execute("INSERT INTO users (username , adhar , walletID, password) VALUES (?, ?,?, ?)",(user, adhr, userMW, cryptPass))
-                conn.commit()
-                print('done')
-                msg = "Registered Successfully"
-        except:
+            if 'user_form' in request.form:
+                user = request.form['username']
+                adhr = request.form['aadhar']
+                userMW = request.form['user_metawallet']
+                pswd = request.form['password']
+                cryptPass = bcrypt.generate_password_hash(pswd).decode('utf-8')
+                with sqlite3.connect('userData.db') as conn:
+                    cur = conn.cursor()
+                    cur.execute("INSERT INTO users (username , adhar , walletID, password) VALUES (?, ?,?, ?)",
+                                (user, adhr, userMW, cryptPass))
+                    conn.commit()
+                    print('User registered successfully.')
+                    msg = "User Registered Successfully"
+                    
+            elif 'org_form' in request.form:
+                orgname = request.form['orgname']
+                orgtype = request.form['orgtype']
+                org_metawallet = request.form['org_metawallet']
+                with sqlite3.connect('orgData.db') as conn:
+                    cur = conn.cursor()
+                    cur.execute("INSERT INTO users (orgname , orgtype , org_metawallet) VALUES (?, ?,?)",
+                                (orgname, orgtype, org_metawallet))
+                    conn.commit()
+                print('Official registered successfully.')
+                msg = "Official Registered Successfully"
+
+        except Exception as e:
             conn.rollback()
-            msg= "NOT FOUND [JUST LIKE MY MENTAL HEALTH X( ]" #change this before finalising lmao
+            msg = f"Error: {e}"
         finally:
             conn.close()
-            
-    return render_template("index.html", msg = msg)
+
+    return render_template("index.html", msg=msg)
+
 
 
 if __name__ == "__main__":
