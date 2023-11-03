@@ -115,7 +115,7 @@ def index():
                 org_metawallet = request.form['org_metawallet']
                 with sqlite3.connect('orgData.db') as conn:
                     cur = conn.cursor()
-                    cur.execute("INSERT INTO users (orgname , orgtype , org_metawallet) VALUES (?, ?,?)",
+                    cur.execute("INSERT INTO organizations (orgname , orgtype , org_metawallet) VALUES (?, ?,?)",
                                 (orgname, orgtype, org_metawallet))
                     conn.commit()
                 print('Official registered successfully.')
